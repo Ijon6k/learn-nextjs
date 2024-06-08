@@ -1,29 +1,19 @@
 import { NextResponse, NextRequest } from "next/server";
+import { title } from "process";
 const data = [
   {
     id: 1,
-    name: "sepatu Nike",
+    title: "sepatu Nike",
     price: 10000,
+    image:
+      "https://images.jdsports.id/i/jdid/jd_IH3118_al?w=400&resmode=sharp&qlt=70&fmt=webp",
   },
   {
     id: 2,
-    name: "sepatu Adidas",
+    title: "sepatu Adidas",
     price: 20000,
-  },
-  {
-    id: 3,
-    name: "sepatu Reebok",
-    price: 30000,
-  },
-  {
-    id: 4,
-    name: "sepatu Puma",
-    price: 40000,
-  },
-  {
-    id: 5,
-    name: "sepatu Converse",
-    price: 50000,
+    image:
+      "https://images.jdsports.id/i/jdid/jd_IH3118_al?w=400&resmode=sharp&qlt=70&fmt=webp",
   },
 ];
 
