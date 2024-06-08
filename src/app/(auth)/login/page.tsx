@@ -1,9 +1,25 @@
+"use client";
 import Link from "next/link";
 
 export default function LoginPage() {
+  const handleLgoin = (e: any) => {
+    e.preventDefault();
+    fetch("/api/auth/login", {
+      method: "POST",
+      body: JSON.stringify({
+        email: e.currentTarget.email.value,
+        password: e.currentTarget.password.value,
+      }),
+    });
+  };
+
   return (
     <section className="flex min-h-screen items-center justify-center w-full flex-col">
-      <form action="" className="flex flex-col gap-3 p-5 rounded-md bg-sky-200">
+      <form
+        action=""
+        className="flex flex-col gap-3 p-5 rounded-md bg-sky-200"
+        onSubmit={(e) => handleLgoin(e)}
+      >
         <label htmlFor="email">Email</label>
         <input
           type="email"
