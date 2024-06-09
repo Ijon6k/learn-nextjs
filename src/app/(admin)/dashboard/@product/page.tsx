@@ -8,8 +8,11 @@ export default function AdminProductPage() {
   };
 
   return (
-    <div className=" flex justify-center items-center w-screen h-screen">
-      <button className="p-2 rounded-xl bg-sky-200" onClick={revalidate}>
+    <div className=" w-3/6 h-96 bg-sky-200  rounded-xl flex justify-center items-center ">
+      <button
+        className="p-2 rounded-lg bg-pink-300 font-semibold "
+        onClick={revalidate}
+      >
         Revalidate
       </button>
     </div>
